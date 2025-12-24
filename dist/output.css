@@ -279,6 +279,9 @@
   .h-56 {
     height: calc(var(--spacing) * 56);
   }
+  .h-full {
+    height: 100%;
+  }
   .max-h-\[90vh\] {
     max-height: 90vh;
   }
@@ -365,6 +368,12 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .bg-black\/40 {
+    background-color: color-mix(in srgb, #000 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
+    }
   }
   .bg-black\/60 {
     background-color: color-mix(in srgb, #000 60%, transparent);
