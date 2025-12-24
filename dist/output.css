@@ -381,11 +381,20 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\/images\/page-title\.jpg\'\)\] {
+    background-image: url('/images/page-title.jpg');
+  }
   .bg-\[url\(\.\/images\/page-title\.jpg\)\] {
     background-image: url(./images/page-title.jpg);
   }
   .bg-\[url\(\/images\/page-title\.jpg\)\] {
     background-image: url(/images/page-title.jpg);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .object-cover {
     object-fit: cover;
